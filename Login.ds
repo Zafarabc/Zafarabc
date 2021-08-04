@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='' errorhandling='' type='null'/>
+<fallback useFallback='false'/>
+<step action='navigateTo' value='"https://qa-mammoth-es-console.lab.exchangesolutions.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='setValue' value='"allaccess"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;false&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;username&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;Login-container-form-group&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;Username or Email&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"Mammoth1!"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(&quot;false&quot;)' selected='true'/>
+   <accessor type='setValue' value='password(&quot;password&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(0,_in(div(&quot;password-container&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(0)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;Log In&quot;)' selected='true'/>
+   <accessor type='click' value='submit(&quot;button&quot;)' selected='false'/>
+   <accessor type='click' value='submit(0,_in(div(&quot;Login-container-form-buttons&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(0,_in(div(&quot;Forgot Password?Log In&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(0)' selected='false'/>
+</dialect>
+</step>
+</testcase>
