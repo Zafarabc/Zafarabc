@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='' errorhandling='' type='null'/>
+<fallback useFallback='false'/>
+<step action='navigateTo' value='"http://sahitest.com/demo/training/login.htm"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='assertExists' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertExists' value='bold(&quot;Sahi Training Site&quot;)' selected='true'/>
+   <accessor type='assertExists' value='' selected='false'/>
+</dialect>
+</step>
+<step action='assertNull' value='null' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertNull' value='' selected='true'/>
+</dialect>
+</step>
+<step action='assertNotExists' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertNotExists' value='bold(&quot;Username&quot;)' selected='true'/>
+   <accessor type='assertNotExists' value='' selected='false'/>
+   <accessor type='assertNotExists' value='bold(&quot;abc&quot;)' selected='false'/>
+   <accessor type='assertNotExists' value='bold(&quot; Username&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='assertContainsText' value='"Sahi"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertContainsText' value='bold(&quot;Sahi Training Site&quot;)' selected='true'/>
+   <accessor type='assertContainsText' value='' selected='false'/>
+   <accessor type='assertContainsText' value='blod(&quot;Sahi Training Site&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='store' value='_getText(_bold(&quot;Sahi Training Site&quot;))' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='val1' selected='true'/>
+</dialect>
+</step>
+<step action='assertDoesNotContainText' value='"dsfsdf"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertDoesNotContainText' value='bold(&quot;Sahi Training Site&quot;)' selected='true'/>
+   <accessor type='assertDoesNotContainText' value='' selected='false'/>
+   <accessor type='assertDoesNotContainText' value='blod(&quot;Sahi Training Site&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='log' value='val1' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='log' value='' selected='true'/>
+</dialect>
+</step>
+<step action='assertEqual' value='"Sahi Training Site"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertEqual' value='val1' selected='true'/>
+   <accessor type='assertEqual' value='' selected='false'/>
+   <accessor type='assertEqual' value='val' selected='false'/>
+   <accessor type='assertEqual' value='val 1' selected='false'/>
+</dialect>
+</step>
+<step action='assertNotEqual' value='"abc"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertNotEqual' value='val1' selected='true'/>
+   <accessor type='assertNotEqual' value='' selected='false'/>
+</dialect>
+</step>
+<step action='assertFalse' value='"abc"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertFalse' value='' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='_isVisible(_bold(&quot;Sahi Training Site&quot;))' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='val2' selected='true'/>
+</dialect>
+</step>
+<step action='assertTrue' value='val2' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertTrue' value='' selected='true'/>
+</dialect>
+</step>
+<step action='assertNotNull' value='"Sahi Training Site"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertNotNull' value='' selected='true'/>
+</dialect>
+</step>
+</testcase>
