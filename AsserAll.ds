@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='' errorhandling='' type='null'/>
+<fallback useFallback='false'/>
+<step action='navigateTo' value='"https://demosite.appvance.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;Bags&quot;)' selected='true'/>
+   <accessor type='click' value='' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;Mugs&quot;)' selected='true'/>
+   <accessor type='click' value='' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;Clothing&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;/t/clothing&quot;)' selected='false'/>
+   <accessor type='click' value='link(2,_in(div(&quot;list-group&quot;)))' selected='false'/>
+   <accessor type='click' value='link(2,_in(div(&quot;Bags Mugs Clothing&quot;)))' selected='false'/>
+   <accessor type='click' value='link(10)' selected='false'/>
+   <accessor type='click' value='link(&quot;list-group-item[1]&quot;)' selected='false'/>
+   <accessor type='click' value='link(&quot;lClothing&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='highlight' value='"Red"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='highlight' value='link(&quot;Clothing&quot;)' selected='true'/>
+   <accessor type='highlight' value='' selected='false'/>
+   <accessor type='highlight' value='link&quot;(Clothing&quot;)' selected='false'/>
+   <accessor type='highlight' value='link&quot;(&quot;Clothing&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='navigateTo' value='"https://demosite.appvance.com/login"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='setValue' value='"Test"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='byXPath(&apos;//*[@id=&quot;spree_user_email&quot;]&apos;)' selected='true'/>
+   <accessor type='setValue' value='' selected='false'/>
+</dialect>
+</step>
+<step action='assertDoesNotContainText' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertDoesNotContainText' value='textbox(&quot;spree_user_email&quot;)' selected='true'/>
+   <accessor type='assertDoesNotContainText' value='' selected='false'/>
+   <accessor type='assertDoesNotContainText' value='spree_user_email' selected='false'/>
+   <accessor type='assertDoesNotContainText' value='textbox(spree_user_email)' selected='false'/>
+</dialect>
+</step>
+<step action='assertDoesNotContainText' value='' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertDoesNotContainText' value='byXPath(&apos;//*[@id=&quot;spree_user_email&quot;]&apos;)' selected='true'/>
+   <accessor type='assertDoesNotContainText' value='' selected='false'/>
+   <accessor type='assertDoesNotContainText' value='text(&quot;//*[@name=&apos;spree_user[email]&apos;]&quot;)' selected='false'/>
+   <accessor type='assertDoesNotContainText' value='byXpath(&quot;//*[@name=&apos;spree_user[email]&apos;]&quot;)' selected='false'/>
+   <accessor type='assertDoesNotContainText' value='byXPath(&quot;//*[@name=&apos;spree_user[email]&apos;]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='assertDoesNotContainText' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertDoesNotContainText' value='byXPath(&apos;//*[@id=&quot;spree_user_password&quot;]&apos;)' selected='true'/>
+   <accessor type='assertDoesNotContainText' value='' selected='false'/>
+   <accessor type='assertDoesNotContainText' value='byXPath(&apos;//*[@name=&quot;spree_user[password]&quot;]&apos;)' selected='false'/>
+</dialect>
+</step>
+</testcase>
